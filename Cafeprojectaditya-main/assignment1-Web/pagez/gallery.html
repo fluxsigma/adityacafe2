@@ -1,0 +1,146 @@
+<!DOCTYPE <html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="menu.js" defer></script>
+    <link rel="stylesheet" href="page.css" />
+   
+ <script src="gallery.js"></script>
+    <title>Document</title>
+</head>
+
+
+<body>
+    <header class="sticky king">
+        <nav style="display: flex;">
+            <div style="margin-right: 60px; margin-left: -30px;">
+                <ul>
+                    <li><a href="">CAFE COFFEE DAY</a></li>
+
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="menu.html">Cafe Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <img src="img/main.jpg" width="100%" alt="">
+
+    <div class="about">
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: rgb(141, 113, 77);">Image Gallery</h1>
+    </div>
+
+    <div class="row">
+        <div class="column">
+          <img width="300px" height="300px" src="img/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img width="300px" height="300px"src="img/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img width="300px" height="300px"src="img/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img width="300px" height="300px" src="img/img1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+      </div>
+
+<!-- modal -->
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="img/1.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="img/2.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="img/3.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="img/img1.jpg" style="width:100%">
+          </div>
+      
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+          <!-- Thumbnail image controls -->
+          <!-- <div class="column">
+            <img width="300px" height="300px"class="demo" src="img/1.jpg" onclick="currentSlide(1)" alt="Nature">
+          </div>
+      
+          <div class="column">
+            <img width="300px" height="300px" class="demo" src="img/2.jpg" onclick="currentSlide(2)" alt="Snow">
+          </div>
+      
+          <div class="column">
+            <img width="300px" height="300px" class="demo" src="img/3.jpg" onclick="currentSlide(3)" alt="Mountains">
+          </div>
+      
+          <div  class="column">
+            <img width="300px" height="300px"  class="demo" src="img/img4.jpg" onclick="currentSlide(4)" alt="Lights">
+          </div>
+        </div>
+      </div> -->
+
+
+
+
+
+
+    </div>
+    <footer id="footer">
+
+        <div class="foot">
+          <div>
+            <h3>Cafe Coffee Day</h3>
+            <p>
+              Connaught Palace <br>
+              New Delhi, Delhi-110092, India <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+    
+    
+    
+          <div class="news">
+    
+            <h4>Join Our Newsletter</h4><br>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="">
+              <input type="email" name="email" style="padding: 5px; width: 300px;">
+              <input type="submit" value="Subscribe" style="padding: 5px;">
+            </form>
+          </div>
+        </div>
+      </footer>
+</body>
+
+</html>
